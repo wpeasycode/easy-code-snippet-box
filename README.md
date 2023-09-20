@@ -19,13 +19,13 @@ Code Snippet Box allows you to easily insert code snippets into your posts via a
 
 1. Upload `easy-code-snippet-box.zip` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Use the `[codebox]` shortcode in your posts to display code snippets.
+3. Use the `[easy_codebox]` shortcode in your posts to display code snippets.
 
 == Frequently Asked Questions ==
 
 = How do I use the shortcode? =
 
-Simply wrap your code with `[codebox]` shortcode. You can also specify the language with the `lang` attribute like `[codebox lang="php"]`.
+Simply wrap your code with `[easy_codebox]` shortcode. You can also specify the language with the `lang` attribute like `[easy_codebox lang="php"]`.
 
 == Screenshots ==
 
