@@ -38,7 +38,7 @@ function easy_code_snippet_box_display($atts = [], $content = null, $tag = '') {
     // add a header
     $output .= '<div style="background-color: #343541; padding: 5px 10px; font-size: 14px; color: #fff; display: flex; justify-content: space-between; align-items: center; margin: 0; border-radius: 4px 4px 0 0;">';
     $output .= '<span>' . esc_html(strtoupper($wporg_atts['lang'])) . '</span>';
-    $output .= '<button class="copy-button" style="background: none; border: none; cursor: pointer; color: #fff;" onclick="copyToClipboard(this)">📋 Copy Code</button>';
+    $output .= '<button class="copy-button" style="background: none; border: none; cursor: pointer; color: #fff;" onclick="copyToClipboard(this)">ðŸ“‹ Copy Code</button>';
     $output .= '</div>';
 
     // start box
@@ -82,13 +82,13 @@ function easy_code_snippet_box_settings_page(){
                         <div class="inside">
                             <p>Welcome to Easy Code Snippet Box! Here's how to use this plugin effectively:</p>
                             <h4>Basic Usage</h4>
-                            <p>Simply wrap your code inside the <code>[codebox][/codebox]</code> shortcode.</p>
-                            <pre><code>[codebox]Your code here[/codebox]</code></pre>
+                            <p>Simply wrap your code inside the <code>[easy_codebox][/easy_codebox]</code> shortcode.</p>
+                            <pre><code>[easy_codebox]Your code here[/easy_codebox]</code></pre>
                             <h4>Adding Language</h4>
                             <p>You can specify the programming language for syntax highlighting using the <code>lang</code> attribute.</p>
-                            <pre><code>[codebox lang="php"]Your PHP code here[/codebox]</code></pre>
+                            <pre><code>[easy_codebox lang="php"]Your PHP code here[/easy_codebox]</code></pre>
                             <h4>Closing the Shortcode</h4>
-                            <p>Always remember to close the shortcode with <code>[/codebox]</code> to ensure proper rendering.</p>
+                            <p>Always remember to close the shortcode with <code>[/easy_codebox]</code> to ensure proper rendering.</p>
                         </div>
                     </div>
                 </div>
@@ -127,9 +127,9 @@ function easy_code_snippet_box_add_button_animation_script() {
         textArea.remove();
 
         // Animation and text change
-        button.innerHTML = "✅ Copied!";
+        button.innerHTML = "âœ… Copied!";
         setTimeout(function() {
-            button.innerHTML = "📋 Copy Code";
+            button.innerHTML = "ðŸ“‹ Copy Code";
         }, 2000);
     }
     </script>';
